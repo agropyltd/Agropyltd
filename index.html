@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroPy | Organic Crop Protection – Made in Rwanda</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --green:#1B5E20;
+    --light-green:#2e7d32;
+    --yellow:#fbc02d;
+    --gray:#f5f5f5;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:white;
+    color:#333;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    background:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    z-index:1000;
+}
+
+.logo{
+    font-weight:700;
+    font-size:22px;
+    color:var(--green);
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:25px;
+    color:#333;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:var(--green);
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+    color:white;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:var(--yellow);
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:12px 28px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:600;
+    margin-right:10px;
+}
+
+.btn-primary{
+    background:var(--green);
+    color:white;
+}
+
+.btn-secondary{
+    background:var(--yellow);
+    color:black;
+}
+
+section{
+    padding:100px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:32px;
+    color:var(--green);
+}
+
+.about{
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:50%;
+    border-radius:12px;
+}
+
+.about-text{
+    width:50%;
+}
+
+.features{
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+}
+
+.feature{
+    width:23%;
+    background:var(--gray);
+    padding:30px;
+    border-radius:12px;
+}
+
+.ecocert{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 8%;
+}
+
+.blog{
+    display:flex;
+    gap:30px;
+}
+
+.blog-card{
+    width:30%;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.blog-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.blog-card div{
+    padding:20px;
+}
+
+footer{
+    background:var(--green);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:22px;
+}
+
+@media(max-width:900px){
+    .about,.features,.blog{
+        flex-direction:column;
+    }
+    .about img,.about-text,.feature,.blog-card{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">AgroPy</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Certification</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h1>Organic Crop Protection <br><span>Made in Rwanda</span></h1>
+        <p>ECOCERT Approved. Safe. Effective. Farmer-Focused.</p>
+        <a href="#" class="btn btn-primary">View Products</a>
+        <a href="#" class="btn btn-secondary">Contact Sales</a>
+    </div>
+</div>
+
+<section>
+    <h2 class="section-title">About Us</h2>
+    <div class="about">
+        <img src="https://images.unsplash.com/photo-1592928302751-8c8bafeb9b51?auto=format&fit=crop&w=900&q=80">
+        <div class="about-text">
+            <h3>Leverage Nature, Safeguard Crops</h3>
+            <p>
+                Agropharm Africa Ltd provides certified organic insect control
+                products designed to protect crops while preserving the environment.
+                Proudly manufactured in Rwanda.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Why Choose Us</h2>
+    <div class="features">
+        <div class="feature">
+            <h3>🌱 Organic & Safe</h3>
+            <p>Environmentally friendly solutions.</p>
+        </div>
+        <div class="feature">
+            <h3>🇷🇼 Made in Rwanda</h3>
+            <p>Proudly local production.</p>
+        </div>
+        <div class="feature">
+            <h3>🔬 Scientifically Tested</h3>
+            <p>International quality standards.</p>
+        </div>
+        <div class="feature">
+            <h3>🌍 Sustainable</h3>
+            <p>Future-focused agriculture.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Agropharm Africa Ltd | Organic Crop Protection Solutions</p>
+    <p>Email: info@agropharmafrica.com | Tel: +250 73333 8383</p>
+</footer>
+
+<a href="https://wa.me/250733338383" class="whatsapp">💬</a>
+
+</body>
+</html>
